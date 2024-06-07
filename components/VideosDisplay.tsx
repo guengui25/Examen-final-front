@@ -1,8 +1,8 @@
 import { FunctionComponent } from "preact";
 import Fav from "../islands/Fav.tsx";
-import { VideoDisplayProps } from "../types.ts";
+import { VideosDisplayProps } from "../types.ts";
 
-const VideosDisplay: FunctionComponent<VideoDisplayProps> = (
+const VideosDisplay: FunctionComponent<VideosDisplayProps> = (
   { videos, userID },
 ) => {
   return (
