@@ -1,7 +1,7 @@
 import { FunctionComponent } from "preact";
 import { Data } from "../types.ts";
 
-const Login: FunctionComponent<Data> = ({message}) => {
+const Login: FunctionComponent<Data> = ({ message }) => {
   return (
     <div class="login-container">
       <h2>Login</h2>

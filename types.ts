@@ -16,15 +16,15 @@ export type User = {
 };
 
 export type Video = {
-  title:string,
-  thumbnail: string,
-  description: string,
-  duration: number,
-  youtubeid: string,
-  date: string,
-  id: string,
-  fav: boolean
-}
+  title: string;
+  thumbnail: string;
+  description: string;
+  duration: number;
+  youtubeid: string;
+  date: string;
+  id: string;
+  fav: boolean;
+};
 
 export type VideosDisplayProps = {
   videos: Video[];
@@ -35,4 +35,3 @@ export type VideoProps = {
   video: Video;
   userID: string;
 };
-

@@ -1,4 +1,9 @@
-import { FreshContext, Handlers, LayoutConfig, PageProps } from "$fresh/server.ts";
+import {
+  FreshContext,
+  Handlers,
+  LayoutConfig,
+  PageProps,
+} from "$fresh/server.ts";
 import { setCookie } from "$std/http/cookie.ts";
 import Login from "../components/Login.tsx";
 import { Data, User } from "../types.ts";
@@ -23,12 +28,13 @@ export const handler: Handlers = {
     const API_URL = Deno.env.get("API_URL");
     if (!API_URL) throw new Error("API_URL is not set in the .env");
 
-    const response = await fetch(API_URL+"/checkuser", {
+    const response = await fetch(API_URL + "/checkuser", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
-        email,password
-      })
+        email,
+        password,
+      }),
     });
 
     if (response.status == 404 || response.status == 400) {

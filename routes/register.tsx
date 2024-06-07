@@ -1,4 +1,9 @@
-import { FreshContext, Handlers, LayoutConfig, PageProps } from "$fresh/server.ts";
+import {
+  FreshContext,
+  Handlers,
+  LayoutConfig,
+  PageProps,
+} from "$fresh/server.ts";
 import { setCookie } from "$std/http/cookie.ts";
 import Register from "../components/Register.tsx";
 import { Data, User } from "../types.ts";
